@@ -42,7 +42,7 @@ export const CoupleDetails: React.FC = () => {
           </h3>
           <div className="text-[#13203b] font-serif text-[2.5vw] sm:text-[18px] md:text-[22px] space-y-1 sm:space-y-2 drop-shadow-sm">
             <p>Son of</p>
-            <p>H.G. Somasiri</p>
+            <p>M.G. Somasiri</p>
             <p className="text-[#c5a059] text-[2vw] sm:text-[14px] md:text-[18px] italic">&</p>
             <p>Champika Kalu Arachchi</p>
           </div>
