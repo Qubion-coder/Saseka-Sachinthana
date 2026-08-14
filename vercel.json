@@ -2,5 +2,11 @@
   "buildCommand": "rm -rf node_modules && npm install && vite build",
   "env": {
     "VITE_SITE_URL": "https://dinelka-prabashi-wedding.vercel.app"
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
