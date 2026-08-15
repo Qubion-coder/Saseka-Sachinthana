@@ -46,6 +46,11 @@ export const Footer: React.FC = () => {
         <p className="font-display mt-6 text-base sm:text-lg font-light italic text-[#D4AF37]">
           Madushika & Dhananjaya
         </p>
+        <div className="mt-8">
+          <p className="text-[#D4AF37] text-xs font-sans tracking-wider">
+            Want a beautiful wedding website like this? Create yours with <a target="_blank" rel="noreferrer" className="text-gray-700 hover:text-[#D4AF37] underline font-medium" href="https://wa.me/94707819074">invitemint</a>
+          </p>
+        </div>
       </div>
     </footer>
   );
