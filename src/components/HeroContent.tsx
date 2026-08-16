@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { ChevronDown } from 'lucide-react';
 
 const containerVariants = {
   hidden: { opacity: 0 },
@@ -24,62 +25,95 @@ const itemVariants = {
 export const HeroContent: React.FC = () => {
   return (
     <section aria-label="Hero — Save the Date" className="relative min-h-[100dvh] overflow-hidden bg-[#fbf8f1]">
-      {/* Background Image */}
+      {/* Background Image - fully visible without overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/ChatGPT Image Aug 4, 2026, 03_50_44 PM.png" 
+          src="/ChatGPT Image Aug 17, 2026, 01_21_57 AM.png" 
           alt="Wedding Illustration"
           className="h-full w-full object-cover object-center" 
         />
       </div>
 
-      {/* Text Overlay - Positioned specifically in the lower empty space */}
-      <div className="absolute bottom-0 left-0 w-full h-[50%] sm:h-[45%] flex flex-col items-center justify-center z-10 pb-4 sm:pb-8">
+      {/* Text Overlay - Elegant Full Section Layout */}
+      <div className="absolute inset-0 flex flex-col items-center justify-between z-10 py-16 sm:py-20 px-4">
+        
+        {/* Top Content */}
         <motion.div 
-          className="flex flex-col items-center text-center px-4 w-full max-w-md mx-auto mt-32 sm:mt-12"
+          className="flex flex-col items-center text-center mt-20 sm:mt-32"
           variants={containerVariants}
           initial="hidden"
           animate="visible"
         >
-          <motion.p variants={itemVariants} className="text-[#a87b47] font-serif tracking-[0.2em] uppercase text-[9px] sm:text-[11px] mb-2 sm:mb-3">
+          <motion.p variants={itemVariants} className="text-[#2C1810] font-serif tracking-[0.2em] uppercase text-[10px] sm:text-[12px] mb-3 font-semibold" style={{ textShadow: "0 0 10px rgba(255,255,255,0.8)" }}>
             The Celebration of Love
           </motion.p>
           
-          <motion.div variants={itemVariants} className="flex items-center gap-2 mb-1 w-32 mx-auto">
-            <div className="h-[1px] flex-1 bg-[#a87b47]/70"></div>
-            <div className="w-1.5 h-1.5 rotate-45 bg-[#a87b47]"></div>
-            <div className="h-[1px] flex-1 bg-[#a87b47]/70"></div>
+          <motion.div variants={itemVariants} className="flex items-center gap-2 w-32 mx-auto">
+            <div className="h-[2px] flex-1 bg-[#2C1810]/70"></div>
+            <div className="w-1.5 h-1.5 rotate-45 bg-[#2C1810]"></div>
+            <div className="h-[2px] flex-1 bg-[#2C1810]/70"></div>
           </motion.div>
-          
+        </motion.div>
+
+        {/* Middle Content - Names */}
+        <motion.div 
+          className="flex flex-col items-center text-center w-full max-w-3xl mx-auto"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
           <motion.h1 variants={itemVariants}
-            className="text-[#a87b47] font-medium leading-none -mb-1 sm:-mb-2"
-            style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(2.75rem, 10vw, 4rem)" }}
+            className="text-[#1a1005] font-medium leading-none mb-2"
+            style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(3.5rem, 12vw, 6rem)", textShadow: "0 0 20px rgba(255,255,255,0.7), 0 0 10px rgba(255,255,255,0.7)" }}
           >
-            Madushika
+            Saseka
           </motion.h1>
           
           <motion.span variants={itemVariants}
-            className="text-[#a87b47] text-2xl sm:text-3xl my-0"
-            style={{ fontFamily: "'Great Vibes', cursive" }}
+            className="text-[#2C1810] text-3xl sm:text-4xl my-2"
+            style={{ fontFamily: "'Great Vibes', cursive", textShadow: "0 0 15px rgba(255,255,255,0.7)" }}
           >
             &
           </motion.span>
           
           <motion.h1 variants={itemVariants}
-            className="text-[#a87b47] font-medium leading-none mb-3 sm:mb-4 mt-0"
-            style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(2.75rem, 10vw, 4rem)" }}
+            className="text-[#1a1005] font-medium leading-none mt-2"
+            style={{ fontFamily: "'Great Vibes', cursive", fontSize: "clamp(3.5rem, 12vw, 6rem)", textShadow: "0 0 20px rgba(255,255,255,0.7), 0 0 10px rgba(255,255,255,0.7)" }}
           >
-            Dhananjaya
+            Sachinthana
           </motion.h1>
-          
-          <motion.p variants={itemVariants} className="text-[#8b6538] font-serif max-w-[260px] sm:max-w-sm text-xs sm:text-sm leading-snug mb-3 sm:mb-4">
-            Together with our families, <br/>we joyfully invite you to join us
-          </motion.p>
-          
-          <motion.div variants={itemVariants} className="text-[#a87b47] font-serif text-[13px] sm:text-base tracking-[0.3em] font-medium mt-1">
-            02 . 10 . 2026
+        </motion.div>
+
+        {/* Bottom Content - Date (Moved higher up) */}
+        <motion.div 
+          className="flex flex-col items-center text-center mb-36 sm:mb-56"
+          variants={containerVariants}
+          initial="hidden"
+          animate="visible"
+        >
+          <motion.div variants={itemVariants} className="text-[#1a1005] font-serif text-[15px] sm:text-xl tracking-[0.4em] font-bold border-t-2 border-[#2C1810]/50 pt-4 px-8" style={{ textShadow: "0 0 10px rgba(255,255,255,0.8)" }}>
+            17 . 09 . 2026
           </motion.div>
         </motion.div>
+
+        {/* Scroll Down Indicator */}
+        <motion.div 
+          className="absolute bottom-8 left-1/2 -translate-x-1/2 cursor-pointer z-20"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2, duration: 1 }}
+          onClick={() => window.scrollTo({ top: window.innerHeight, behavior: 'smooth' })}
+        >
+          <motion.div
+            animate={{ y: [0, 10, 0] }}
+            transition={{ repeat: Infinity, duration: 2, ease: "easeInOut" }}
+            className="flex flex-col items-center gap-2"
+          >
+            <span className="text-[#2C1810] text-[10px] uppercase tracking-[0.3em] font-medium" style={{ textShadow: "0 0 10px rgba(255,255,255,0.8)" }}>Scroll</span>
+            <ChevronDown className="w-6 h-6 text-[#2C1810]" strokeWidth={1.5} />
+          </motion.div>
+        </motion.div>
+
       </div>
     </section>
   );

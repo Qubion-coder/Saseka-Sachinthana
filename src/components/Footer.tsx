@@ -44,7 +44,7 @@ export const Footer: React.FC = () => {
         </div>
         
         <p className="font-display mt-6 text-base sm:text-lg font-light italic text-[#D4AF37]">
-          Madushika & Dhananjaya
+          Saseka & Sachinthana
         </p>
         <div className="mt-8">
           <p className="text-[#D4AF37] text-xs font-sans tracking-wider">
