@@ -4,27 +4,27 @@ import { motion } from 'motion/react';
 const galleryImages = [
   {
     id: 1,
-    src: "/my/jonathan-borba-WBdYdKyUyT0-unsplash.jpg",
+    src: "/my/jonathan-borba-WBdYdKyUyT0-unsplash.webp",
   },
   {
     id: 2,
-    src: "/my/jonathan-borba-sYVvnpTcRrA-unsplash.jpg",
+    src: "/my/jonathan-borba-sYVvnpTcRrA-unsplash.webp",
   },
   {
     id: 3,
-    src: "/my/jonathan-borba-uNJQnlZHIZU-unsplash.jpg",
+    src: "/my/jonathan-borba-uNJQnlZHIZU-unsplash.webp",
   },
   {
     id: 4,
-    src: "/my/jonathan-borba-zRWlTBnZgYE-unsplash.jpg",
+    src: "/my/jonathan-borba-zRWlTBnZgYE-unsplash.webp",
   },
   {
     id: 5,
-    src: "/my/natali-hordiiuk-z61SlouWhwU-unsplash.jpg",
+    src: "/my/natali-hordiiuk-z61SlouWhwU-unsplash.webp",
   },
   {
     id: 6,
-    src: "/my/pexels-framesbygaurav-37380245.jpg",
+    src: "/my/pexels-framesbygaurav-37380245.webp",
   }
 ];
 

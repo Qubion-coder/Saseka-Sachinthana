@@ -8,7 +8,7 @@ export const SacredUnion: React.FC = () => {
       <div 
         className="relative w-full max-w-[862px] aspect-[862/1824]"
         style={{
-          backgroundImage: `url('/ChatGPT Image Aug 11, 2026, 01_19_32 AM.png')`,
+          backgroundImage: `url('/ChatGPT Image Aug 11, 2026, 01_19_32 AM.webp')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'

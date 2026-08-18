@@ -36,7 +36,7 @@ export const NoteFromUs: React.FC = () => {
           >
             <div className="relative mx-auto w-full max-w-sm md:max-w-none px-3 py-6 sm:px-4 sm:py-8">
               <div className="overflow-hidden rotate-[2deg] origin-center" style={{ border: "1.5px solid rgba(212,175,55,0.48)", boxShadow: "0 14px 44px -12px rgba(212,175,55,0.28), 0 24px 56px -20px rgba(0,0,0,0.55), 0 0 0 1px rgba(212,175,55,0.18)" }}>
-                <img src="/my/jonathan-borba-zRWlTBnZgYE-unsplash.jpg" alt="A moment captured" className="aspect-[3/4] w-full object-cover" loading="lazy" decoding="async" style={{ filter: "saturate(0.96) contrast(1.01)" }} />
+                <img src="/my/jonathan-borba-zRWlTBnZgYE-unsplash.webp" alt="A moment captured" className="aspect-[3/4] w-full object-cover" loading="lazy" decoding="async" style={{ filter: "saturate(0.96) contrast(1.01)" }} />
               </div>
             </div>
           </motion.div>

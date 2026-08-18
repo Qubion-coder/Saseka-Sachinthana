@@ -3,16 +3,17 @@ import { motion, AnimatePresence } from 'motion/react';
 
 interface IntroVideoProps {
   onComplete: () => void;
+  onStart: () => void;
 }
 
-export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
+export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete, onStart }) => {
   const [showVideo, setShowVideo] = useState(false);
   const [isExiting, setIsExiting] = useState(false);
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const handleEnter = () => {
+    onStart();
     if (videoRef.current) {
-      videoRef.current.muted = false;
       const playPromise = videoRef.current.play();
       if (playPromise !== undefined) {
         playPromise.catch(e => console.log("Video play failed:", e));
@@ -67,7 +68,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
                 {/* Image Background */}
                 <div className="absolute inset-0 w-full h-full overflow-hidden">
                   <img
-                    src="/ChatGPT Image Aug 4, 2026, 04_16_30 PM.png"
+                    src="/ChatGPT Image Aug 4, 2026, 04_16_30 PM.webp"
                     alt="Invitation Background"
                     className="w-full h-full object-cover object-center"
                   />

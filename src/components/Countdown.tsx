@@ -29,7 +29,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <section aria-label="Countdown" id="countdown" className="relative py-20 sm:py-28 px-6 overflow-hidden" style={{ backgroundImage: `url('/ChatGPT Image Aug 11, 2026, 01_19_32 AM.png')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <section aria-label="Countdown" id="countdown" className="relative py-20 sm:py-28 px-6 overflow-hidden" style={{ backgroundImage: `url('/ChatGPT Image Aug 11, 2026, 01_19_32 AM.webp')`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <div className="absolute inset-0 bg-[#fdfaf5]/80 z-0"></div>
       <div className="relative z-10">
       <div className="flex items-center justify-center mb-10 sm:mb-14" aria-hidden="true">

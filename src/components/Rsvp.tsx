@@ -39,7 +39,7 @@ export const Rsvp: React.FC = () => {
   return (
     <section 
       className="py-24 px-4 relative overflow-hidden bg-cover bg-center bg-fixed text-stone-900" 
-      style={{ backgroundImage: `url('/ChatGPT%20Image%20Aug%2017,%202026,%2001_00_12%20AM.png')` }}
+      style={{ backgroundImage: `url('/ChatGPT%20Image%20Aug%2017,%202026,%2001_00_12%20AM.webp')` }}
       id="rsvp"
     >
       <div className="max-w-xl mx-auto relative z-10">

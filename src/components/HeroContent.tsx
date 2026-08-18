@@ -28,7 +28,7 @@ export const HeroContent: React.FC = () => {
       {/* Background Image - fully visible without overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/ChatGPT Image Aug 17, 2026, 01_21_57 AM.png" 
+          src="/ChatGPT Image Aug 17, 2026, 01_21_57 AM.webp" 
           alt="Wedding Illustration"
           className="h-full w-full object-cover object-center" 
         />

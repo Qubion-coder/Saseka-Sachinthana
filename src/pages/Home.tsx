@@ -50,7 +50,11 @@ export const Home: React.FC = () => {
 
       <AnimatePresence mode="wait">
         {showIntro && (
-          <IntroVideo key="intro" onComplete={() => { setShowIntro(false); setShowMain(true); startMusic(); }} />
+          <IntroVideo 
+            key="intro" 
+            onStart={startMusic}
+            onComplete={() => { setShowIntro(false); setShowMain(true); }} 
+          />
         )}
 
         {showMain && (
