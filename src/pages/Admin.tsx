@@ -75,7 +75,7 @@ With love,
               type="text"
               value={guestName}
               onChange={(e) => setGuestName(e.target.value)}
-              placeholder="e.g. Sanjaya"
+              placeholder="e.g. Kavindu"
               className="w-full p-3 rounded-lg border border-stone-200 focus:ring-2 focus:ring-brand-gold/50 focus:border-brand-gold outline-none transition-all"
             />
           </div>
