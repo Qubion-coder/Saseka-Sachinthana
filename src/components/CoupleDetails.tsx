@@ -44,7 +44,7 @@ export const CoupleDetails: React.FC = () => {
             <p>Son of</p>
             <p>The Late Mr. Shelton Pathiraja</p>
             <p className="text-[#c5a059] text-[2vw] sm:text-[14px] md:text-[18px] italic">&</p>
-            <p>Mrs. Ranjanie Dassanayak</p>
+            <p>Mrs. Ranjanie Dassanayake</p>
           </div>
         </motion.div>
 
