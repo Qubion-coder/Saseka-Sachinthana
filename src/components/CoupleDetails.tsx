@@ -7,7 +7,7 @@ export const CoupleDetails: React.FC = () => {
       <div 
         className="relative w-full max-w-[864px] aspect-[864/1821]"
         style={{
-          backgroundImage: `url('/ChatGPT Image Aug 11, 2026, 01_01_47 AM.png')`,
+          backgroundImage: `url('/ChatGPT Image Aug 11, 2026, 01_01_47 AM.webp')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'

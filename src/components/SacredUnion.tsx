@@ -70,6 +70,7 @@ export const SacredUnion: React.FC = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-[#1a1005] uppercase tracking-[0.1em] text-[3vw] sm:text-[18px] md:text-[20px] font-semibold font-serif mb-1">Hotel Grand Guardian</span>
+                <span className="text-[#3b2a1a] uppercase tracking-[0.05em] text-[2.5vw] sm:text-[15px] md:text-[16px] font-sans mb-0.5">The Grand Ballroom</span>
                 <span className="text-[#3b2a1a] uppercase tracking-[0.05em] text-[2.5vw] sm:text-[15px] md:text-[16px] font-sans">Ratnapura</span>
               </div>
             </div>
