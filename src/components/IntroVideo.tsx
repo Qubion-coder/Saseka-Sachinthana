@@ -107,7 +107,7 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
                     </h1>
 
                     <div className="text-[#a87b47] font-serif text-sm sm:text-base tracking-[0.3em] font-medium mb-12">
-                      02 . 10 . 2026
+                      17 . 09 . 2026
                     </div>
 
                     <motion.button

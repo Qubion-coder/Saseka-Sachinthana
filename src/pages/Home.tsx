@@ -9,6 +9,7 @@ import { CoupleDetails } from '../components/CoupleDetails';
 import { SacredUnion } from '../components/SacredUnion';
 import { Countdown } from '../components/Countdown';
 import { GuestGreeting } from '../components/GuestGreeting';
+import { Rsvp } from '../components/Rsvp';
 
 export const Home: React.FC = () => {
   const [showIntro, setShowIntro] = useState(true);
@@ -16,7 +17,7 @@ export const Home: React.FC = () => {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const weddingDate = new Date('2026-10-02T09:45:00');
+  const weddingDate = new Date('2026-09-17T09:16:00');
 
   const startMusic = () => {
     if (audioRef.current && !isMusicPlaying) {
@@ -78,6 +79,7 @@ export const Home: React.FC = () => {
 
             <CoupleDetails />
             <SacredUnion />
+            <Rsvp />
 
             <Footer />
           </motion.main>

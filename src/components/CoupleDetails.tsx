@@ -42,9 +42,9 @@ export const CoupleDetails: React.FC = () => {
           </h3>
           <div className="text-[#13203b] font-serif text-[2.5vw] sm:text-[18px] md:text-[22px] space-y-1 sm:space-y-2 drop-shadow-sm">
             <p>Son of</p>
-            <p>Mr. Layanal Dharmasena</p>
+            <p>The Late Mr. Shelton Pathiraja</p>
             <p className="text-[#c5a059] text-[2vw] sm:text-[14px] md:text-[18px] italic">&</p>
-            <p>Mrs. Damayanthi Alahakoon</p>
+            <p>Mrs. Ranjanie Dassanayak</p>
           </div>
         </motion.div>
 
@@ -64,9 +64,9 @@ export const CoupleDetails: React.FC = () => {
           </h3>
           <div className="text-[#13203b] font-serif text-[2.5vw] sm:text-[18px] md:text-[22px] space-y-1 sm:space-y-2 drop-shadow-sm">
             <p>Daughter of</p>
-            <p>The Late Mr. Shelton Pathiraja</p>
+            <p>Mr. Layanal Dharmasena</p>
             <p className="text-[#c5a059] text-[2vw] sm:text-[14px] md:text-[18px] italic">&</p>
-            <p>Mrs. Ranjanie Dassanayak</p>
+            <p>Mrs. Damayanthi Alahakoon</p>
           </div>
         </motion.div>
       </div>
