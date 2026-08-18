@@ -22,12 +22,17 @@ export const Admin: React.FC = () => {
     setCopiedMessage(false);
   };
 
-  const messageTemplate = `Dear ${prefix} ${guestName},
+  const messageTemplate = `Dear ${prefix} ${guestName} ❤️
 
-We are delighted to invite you to our wedding. Please click the link below to view your invitation:
+With joyful hearts, we warmly invite you to celebrate one of the most special days of our lives as we begin our journey together.
+
+Please view our wedding invitation and all the event details through the link below 🌐:
 
 ${generatedLink}
 
+Your presence would truly mean the world to us, and we would be honored to celebrate this beautiful moment together.
+
+With love,
 ❤️ Sachinthana & Saseka`;
 
   const copyToClipboard = async (text: string, setCopied: React.Dispatch<React.SetStateAction<boolean>>) => {

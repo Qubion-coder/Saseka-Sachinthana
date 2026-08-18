@@ -2,7 +2,7 @@ type SheetName = 'rsvp';
 
 type SheetPayload = Record<string, string | number>;
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyKzaclbrDhF_Ckzz4ZdzHNygetAuedycnq68nhPvjPzwO11PNnuGF3rmrB9XVwAr3f/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbySHu6JxnKOTTTw93lWXxMsucrm1GJCBoxEu2mDdMEz0YXFXnISuF6ouoYK8W3nba2i/exec";
 
 export async function submitToGoogleSheet(sheet: SheetName, payload: SheetPayload): Promise<void> {
   if (!GOOGLE_SCRIPT_URL) {
